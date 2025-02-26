@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav,.nav1{
+   width: 100vw;
+   background-color: aqua;
+   padding: 15px;
+   color: white;
+}
+.nav1{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bolder;
+}
+.nav1 li:nth-child(2){
+    position: relative;
+}
+.drop1{
+    position: absolute;
+    background-color: aqua;
+    list-style-type: none;
+    padding: 19px;
+    top: 15px;
+    right: 0;
+    display: none;
+}
+.drop1 li{
+    margin-bottom: 16px;
+}
+.nav1 li:nth-child(2):hover .drop1{
+    display: block;
+    cursor: pointer;
+}
+.drop2{
+    position: absolute;
+    list-style-type: none;
+    background-color: aqua;
+    padding: 20px;
+    bottom: -9;
+    
+}
